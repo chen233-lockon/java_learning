@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.ActivityMapper">
+    <insert id="insertActivity">
+        insert into activity values (#{id},#{channel},#{name},#{startTime},#{endTime},#{description},#{type},#{discount},#{voucher},#{createTime},#{updateTime})
+    </insert>
+    <update id="updateActivity">
+        update activity set channel = #{channel},name = #{name},start_time = #{startTime},end_time = #{endTime},description = #{description},type = #{type},discount = #{discount},voucher = #{voucher},update_time = #{updateTime} where id = #{id}
+    </update>
+    <delete id="deleteActivityById">
+        delete from activity where id = #{id}
+    </delete>
+    <select id="selectActivityById" resultType="com.itheima.entity.Activity">
+        select * from activity where id = #{id}
+    </select>
+    <select id="selectActivityByChannelAndType" resultType="com.itheima.entity.Activity">
+        select * from activity
+        <where>
+            <if test="channel != null">
+                channel = #{channel}
+            </if>
+            <if test="type != null">
+                and type = #{type}
+            </if>
+        </where>
+    </select>
+</mapper>

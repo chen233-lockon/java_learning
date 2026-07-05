@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="F03AnnotationDemo.MyAnnotation" />
+      <item index="1" class="java.lang.String" itemvalue="ParameterizedTest" />
+    </list>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/oo_05Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/oo_07Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/HelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/oo_08SpringBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/oo_09SpringBootExercise/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-ioc-homework/springboot-ioc-homework/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/oo_10SpringBoot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis-homework/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/oo_10SpringBoot-mybatis/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="25" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

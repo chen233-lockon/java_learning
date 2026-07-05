@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--配置xml实现selectByNameAndGenderAndJob方法不需要@select注解-->
+<mapper namespace="org.itclass.mapper.EmployeeMapper">
+    <select id="selectByNameAndGenderAndJob" resultType="org.itclass.entity.Employee">
+        select * from employee
+        <where>
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="gender != null">
+                and gender = #{gender}
+            </if>
+            <if test="job != null">
+                and job = #{job}
+            </if>
+
+        </where>
+    </select>
+</mapper>
