@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oo_07Maven" />
+        <module name="oo_08SpringBoot" />
+        <module name="HelloWorld" />
+        <module name="springboot-mybatis-homework" />
+      </profile>
+      <profile name="Annotation profile for oo_10SpringBoot_mybatis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../software/IDEA/apache-maven-3.9.16/mvn_repo/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$PROJECT_DIR$/../software/IDEA/apache-maven-3.9.16/mvn_repo/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="oo_09SpringBootExercise" />
+        <module name="oo_10SpringBoot_mybatis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="oo_06Maven" target="21" />
+      <module name="springboot-ioc-homework" target="17" />
+      <module name="SpringBoot-mybatis" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="HelloWorld" options="-parameters" />
+      <module name="oo_08SpringBoot" options="-parameters" />
+      <module name="oo_09SpringBootExercise" options="-parameters" />
+      <module name="oo_10SpringBoot_mybatis" options="-parameters" />
+      <module name="springboot-ioc-homework" options="-parameters" />
+      <module name="springboot-mybatis-homework" options="-parameters" />
+    </option>
+  </component>
+</project>
